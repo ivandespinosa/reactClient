@@ -4,8 +4,7 @@ export async function post(data) {
   const requestOptions = {
     method: 'POST',
     headers: { 
-      'content-type': 'application/json',    
-      'Access-Control-Allow-Origin': '*' 
+      'content-type': 'application/json' 
     },
     body: JSON.stringify({amount:data})
   }
