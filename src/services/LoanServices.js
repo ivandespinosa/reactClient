@@ -6,19 +6,17 @@ export async function post(data) {
     headers: { 
       'content-type': 'application/json' 
     },
-    body: JSON.stringify({amount:data})
+    body: JSON.stringify(data)
   }
 
-  console.log(requestOptions)
+  //console.log(requestOptions)
 
   const response = await fetch(`${baseUrl}/api/validationLoan`, 
   requestOptions)
   const responseJson = await response.json()
-  console.log(responseJson)
+  //console.log(responseJson)
   return responseJson
 
 }
 
-export default {
-  post
-}
+export default post
